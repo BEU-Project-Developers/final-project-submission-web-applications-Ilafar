@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Hp\source\repos\final-project-submission-web-applications-Ilafar\Mentor
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Hp/source/repos/final-project-submission-web-applications-Ilafar/Mentor/Areas/Manage/Views/AdminAccount/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Hp/source/repos/final-project-submission-web-applications-Ilafar/Mentor/Areas/Manage/Views/Course/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENvdXJzZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
