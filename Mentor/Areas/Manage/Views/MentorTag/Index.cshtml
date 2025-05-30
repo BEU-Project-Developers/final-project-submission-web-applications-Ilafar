@@ -1,0 +1,61 @@
+﻿@model List<MentorTags>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>MentorTags list :</h2>
+    <div>
+        <a class="btn btn-primary" asp-action="create" asp-controller="mentortag">
+            Add new mentortag
+        </a>
+    </div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Crud</th>
+        </tr>
+        @foreach (var mentortag in Model)
+        {
+            <tr>
+                <td>@mentortag.Id</td>
+                <td>@mentortag.Name</td>
+                <td>
+                    <a class="btn btn-primary" asp-action="edit" asp-controller="mentortag" asp-route-id="@mentortag.Id">
+                        Edit
+                    </a>
+                    <a class="btn btn-primary" asp-action="detail" asp-controller="mentortag" asp-route-id="@mentortag.Id">
+                        Details
+                    </a>
+                    <a asp-action="delete" asp-controller="mentortag" asp-route-id="@mentortag.Id" class="btn btn-danger">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+
+
+    </table>
+
+</body>
+</html>
+

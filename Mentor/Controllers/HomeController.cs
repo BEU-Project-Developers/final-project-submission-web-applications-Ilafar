@@ -15,7 +15,8 @@ namespace Mentor.Controllers
             {
                 Courses =mentorAppDbContext.Courses.Include(c=>c.Trainer).ToList(),
                 Trainers = mentorAppDbContext.Trainers.ToList(),
-                Users = mentorAppDbContext.AppUsers.ToList()
+                Users = mentorAppDbContext.AppUsers.ToList(),
+                MentorTags = mentorAppDbContext.MentorTags.ToList()
             };
             ViewData["ActivePage"] = "Home";
             return View(vm);

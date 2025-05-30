@@ -15,7 +15,7 @@ namespace Mentor.Controllers
                 Trainers = mentorAppDbContext.Trainers.ToList(),
                 Users = mentorAppDbContext.AppUsers.ToList()
             };
-            ViewData["ActivePage"] = "Home";
+            ViewData["ActivePage"] = "About";
             return View(vm);
         }
     }

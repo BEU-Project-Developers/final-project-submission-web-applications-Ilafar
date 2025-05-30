@@ -12,6 +12,7 @@ namespace Mentor.DAL
         public DbSet<Service> Services { get; set; }
         public DbSet<PricingService> PricingServices { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<MentorTags> MentorTags { get; set; }
         public MentorAppDbContext(DbContextOptions options) : base(options)
         {
 

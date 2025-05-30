@@ -52,10 +52,7 @@
               <a class="nav-link @(ViewData["ActivePage"]?.ToString() == "Trainers" ? "active" : "")" 
                 asp-controller="Trainers" asp-action="Index">Trainers</a>
           </li>
-          <li>
-              <a class="nav-link @(ViewData["ActivePage"]?.ToString() == "Events" ? "active" : "")" 
-                asp-controller="Events" asp-action="Index">Events</a>
-          </li>
+        
           <li>
             <a class="nav-link @(ViewData["ActivePage"]?.ToString() == "Pricing" ? "active" : "")" 
                 asp-controller="Pricing" asp-action="Index">Pricing</a>
