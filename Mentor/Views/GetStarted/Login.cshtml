@@ -9,7 +9,7 @@
                 <div class="card p-4 shadow-sm">
                     <h4 class="mb-3">Returning Customer</h4>
                     <p><strong>I am a returning customer</strong></p>
-                    <form action="#">
+                    <form method="post">
                         <div class="form-group mb-3">
                             <label asp-for="Username">User Name :</label>
                             <input class="mb-0 form-control" asp-for="Username"
@@ -26,6 +26,8 @@
                             <button type="submit" class="btn btn-success w-100">Login</button>
                         </div>
                     </form>
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
                 </div>
             </div>
 
