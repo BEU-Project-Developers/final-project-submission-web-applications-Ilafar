@@ -4195,11 +4195,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Mentor.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\Source\\Repos\\final-project-submission-web-applications-Ilafar\\Mentor\\Mentor.csproj",
       "projectName": "Mentor",
-      "projectPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Mentor.csproj",
+      "projectPath": "C:\\Users\\Hp\\Source\\Repos\\final-project-submission-web-applications-Ilafar\\Mentor\\Mentor.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\obj\\",
+      "outputPath": "C:\\Users\\Hp\\Source\\Repos\\final-project-submission-web-applications-Ilafar\\Mentor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

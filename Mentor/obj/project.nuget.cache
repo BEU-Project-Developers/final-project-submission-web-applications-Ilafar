@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S9ZDLHx8HxM=",
+  "dgSpecHash": "iW1L+lnWf3w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Mentor.csproj",
+  "projectFilePath": "C:\\Users\\Hp\\source\\repos\\final-project-submission-web-applications-Ilafar\\Mentor\\Mentor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
