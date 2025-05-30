@@ -1,5 +1,6 @@
 ﻿using Mentor.DAL;
 using Mentor.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ namespace Mentor.Areas.Manage.Controllers
 {
 
     [Area("Manage")]
+    [Authorize(Roles = "Admin")]
     public class CourseController : Controller
     {
         private readonly MentorAppDbContext mentorAppDbContext;

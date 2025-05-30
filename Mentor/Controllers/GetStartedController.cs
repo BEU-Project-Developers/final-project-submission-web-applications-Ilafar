@@ -1,5 +1,6 @@
 ﻿using Mentor.Models;
 using Mentor.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -48,7 +49,7 @@ namespace Mentor.Controllers
                 return View();
             }
 
-            // await userManager.AddToRoleAsync(newUser, "Member");
+             await userManager.AddToRoleAsync(newUser, "Member");
 
             return RedirectToAction("Login", "Getstarted");
         }
@@ -97,6 +98,7 @@ namespace Mentor.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> Profile()
         {
             var eUser = await userManager.GetUserAsync(User);
@@ -112,6 +114,7 @@ namespace Mentor.Controllers
 
             return View(profileVm);
         }
+        [Authorize(Roles = "Member")]
 
         [HttpPost]
         public async Task<IActionResult> Profile(ProfileVm profileVm)

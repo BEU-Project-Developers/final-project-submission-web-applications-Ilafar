@@ -1,10 +1,12 @@
 ﻿using Mentor.DAL;
 using Mentor.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Mentor.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    [Authorize(Roles = "Admin")]
     public class MentorTagController(MentorAppDbContext mentorAppDbContext) : Controller
     {
        

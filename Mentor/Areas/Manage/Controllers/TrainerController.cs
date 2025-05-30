@@ -1,5 +1,6 @@
 ﻿using Mentor.DAL;
 using Mentor.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
@@ -7,6 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 namespace Mentor.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    [Authorize(Roles = "Admin")]
     public class TrainerController : Controller
     {
         private readonly MentorAppDbContext mentorAppDbContext;

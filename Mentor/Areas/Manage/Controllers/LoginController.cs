@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Construction.Areas.Manage.Controllers;
 
 [Area("Manage")]
+[Authorize(Roles ="Admin")]
 public class LoginController(UserManager<AppUser> userManager,
         SignInManager<AppUser> signInManager,
         RoleManager<IdentityRole> roleManager) : Controller
@@ -43,13 +44,13 @@ public class LoginController(UserManager<AppUser> userManager,
         return Content("Roles created successfully.");
     }
 
-    //[AllowAnonymous]
+    [AllowAnonymous]
     public IActionResult Login()
     {
         return View();
     }
 
-    //[AllowAnonymous]
+    [AllowAnonymous]
     [HttpPost]
     public async Task<IActionResult> Login(AdminLoginVm adminLoginVm)
     {

@@ -1,6 +1,7 @@
 ﻿using Mentor.DAL;
 using Mentor.Models;
 using Mentor.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Mentor.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    [Authorize(Roles = "Admin")]
     public class PricingServicesController(MentorAppDbContext mentorAppDbContext) : Controller
     {
         public IActionResult Index()

@@ -22,6 +22,24 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(option =>
     option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
 }).AddEntityFrameworkStores<MentorAppDbContext>();
 
+builder.Services.ConfigureApplicationCookie(option =>
+{
+    option.Events.OnRedirectToLogin = option.Events.OnRedirectToAccessDenied = context =>
+    {
+        var uri = new Uri(context.RedirectUri);
+        if (context.Request.Path.Value.ToLower().StartsWith("/manage"))
+        {
+            context.Response.Redirect("/manage/login/login" + uri.Query);
+        }
+        else
+        {
+            context.Response.Redirect("/getstarted/login" + uri.Query);
+
+        }
+        return Task.CompletedTask;
+    };
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
