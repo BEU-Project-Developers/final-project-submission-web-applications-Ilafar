@@ -95,8 +95,7 @@
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T07:08:46.117Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -112,8 +111,7 @@
               "RelativeToolTip": "Mentor\\Models\\AppUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T07:06:37.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T07:06:37.62Z"
             },
             {
               "$type": "Document",
@@ -125,8 +123,7 @@
               "RelativeToolTip": "Mentor\\DAL\\MentorAppDbContext.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T07:05:19.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T07:05:19.948Z"
             },
             {
               "$type": "Document",
@@ -138,8 +135,7 @@
               "RelativeToolTip": "Mentor\\ViewModels\\LoginVm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T06:59:36.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:59:36.839Z"
             },
             {
               "$type": "Document",
@@ -151,8 +147,7 @@
               "RelativeToolTip": "Mentor\\Views\\GetStarted\\Started.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T06:53:00.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:53:00.446Z"
             },
             {
               "$type": "Document",
@@ -162,7 +157,7 @@
               "RelativeDocumentMoniker": "Mentor\\Controllers\\GetStartedController.cs",
               "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Controllers\\GetStartedController.cs",
               "RelativeToolTip": "Mentor\\Controllers\\GetStartedController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAIwDMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T06:52:48.995Z",
               "EditorCaption": ""
@@ -177,8 +172,7 @@
               "RelativeToolTip": "Mentor\\ViewModels\\StartVm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T06:54:38.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:54:38.112Z"
             },
             {
               "$type": "Document",
@@ -190,8 +184,7 @@
               "RelativeToolTip": "Mentor\\Views\\GetStarted\\Login.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T06:59:28.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:59:28.486Z"
             },
             {
               "$type": "Document",
@@ -203,8 +196,7 @@
               "RelativeToolTip": "Mentor\\Controllers\\AdminControllercs.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T06:52:41.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:52:41.025Z"
             },
             {
               "$type": "Document",
@@ -216,8 +208,7 @@
               "RelativeToolTip": "Mentor\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAPMAAAAAAAAAAAAAAAYBAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T06:46:55.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:46:55.147Z"
             },
             {
               "$type": "Document",
@@ -229,8 +220,7 @@
               "RelativeToolTip": "Mentor\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T06:46:52.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:46:52.492Z"
             },
             {
               "$type": "Document",
@@ -242,8 +232,7 @@
               "RelativeToolTip": "Mentor\\Views\\Courses\\Index.cshtml",
               "ViewState": "AQIAACEAAAAAAAAAAAAAACcAAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T06:43:07.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:43:07.855Z"
             },
             {
               "$type": "Document",
@@ -255,8 +244,7 @@
               "RelativeToolTip": "Mentor\\Areas\\Manage\\Views\\Course\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T06:40:54.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:40:54.31Z"
             },
             {
               "$type": "Document",
@@ -268,8 +256,7 @@
               "RelativeToolTip": "Mentor\\Areas\\Manage\\Views\\Course\\Create.cshtml",
               "ViewState": "AQIAACMAAAAAAAAAAAAQwEAAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T06:39:56.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:39:56.759Z"
             },
             {
               "$type": "Document",
@@ -281,8 +268,7 @@
               "RelativeToolTip": "Mentor\\Models\\Course.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T06:30:53.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:30:53.837Z"
             },
             {
               "$type": "Document",
@@ -294,8 +280,7 @@
               "RelativeToolTip": "Mentor\\Areas\\Manage\\Controllers\\CourseController.cs",
               "ViewState": "AQIAAGwAAAAAAAAAAAAQwIkAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T06:39:53.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:39:53.437Z"
             },
             {
               "$type": "Document",
@@ -307,8 +292,7 @@
               "RelativeToolTip": "Mentor\\Views\\Courses\\Detail.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T06:29:35.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:29:35.199Z"
             },
             {
               "$type": "Document",
@@ -320,8 +304,7 @@
               "RelativeToolTip": "Mentor\\Controllers\\CoursesController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T06:29:33.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:29:33.077Z"
             }
           ]
         }
