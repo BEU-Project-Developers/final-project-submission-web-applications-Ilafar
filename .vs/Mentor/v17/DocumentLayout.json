@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\controllers\\getstartedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\controllers\\getstartedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\viewmodels\\startvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\viewmodels\\startvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\views\\getstarted\\started.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\views\\getstarted\\started.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\dal\\mentorappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\dal\\mentorappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\views\\getstarted\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\views\\getstarted\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\controllers\\admincontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\controllers\\admincontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\views\\courses\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\views\\courses\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\areas\\manage\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\areas\\manage\\views\\course\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\views\\course\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\areas\\manage\\views\\course\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\views\\course\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\hp\\onedrive\\desktop\\mentor-ilafer\\mentor\\mentor\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Program.cs",
+              "RelativeDocumentMoniker": "Mentor\\Program.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Program.cs",
+              "RelativeToolTip": "Mentor\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:08:46.117Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Mentor\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Models\\AppUser.cs",
+              "RelativeToolTip": "Mentor\\Models\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:06:37.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MentorAppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\DAL\\MentorAppDbContext.cs",
+              "RelativeDocumentMoniker": "Mentor\\DAL\\MentorAppDbContext.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\DAL\\MentorAppDbContext.cs",
+              "RelativeToolTip": "Mentor\\DAL\\MentorAppDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:05:19.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginVm.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\ViewModels\\LoginVm.cs",
+              "RelativeDocumentMoniker": "Mentor\\ViewModels\\LoginVm.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\ViewModels\\LoginVm.cs",
+              "RelativeToolTip": "Mentor\\ViewModels\\LoginVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:59:36.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Started.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\GetStarted\\Started.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Views\\GetStarted\\Started.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\GetStarted\\Started.cshtml",
+              "RelativeToolTip": "Mentor\\Views\\GetStarted\\Started.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T06:53:00.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetStartedController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Controllers\\GetStartedController.cs",
+              "RelativeDocumentMoniker": "Mentor\\Controllers\\GetStartedController.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Controllers\\GetStartedController.cs",
+              "RelativeToolTip": "Mentor\\Controllers\\GetStartedController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:52:48.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartVm.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\ViewModels\\StartVm.cs",
+              "RelativeDocumentMoniker": "Mentor\\ViewModels\\StartVm.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\ViewModels\\StartVm.cs",
+              "RelativeToolTip": "Mentor\\ViewModels\\StartVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:54:38.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\GetStarted\\Login.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Views\\GetStarted\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\GetStarted\\Login.cshtml",
+              "RelativeToolTip": "Mentor\\Views\\GetStarted\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T06:59:28.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminControllercs.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Controllers\\AdminControllercs.cs",
+              "RelativeDocumentMoniker": "Mentor\\Controllers\\AdminControllercs.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Controllers\\AdminControllercs.cs",
+              "RelativeToolTip": "Mentor\\Controllers\\AdminControllercs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:52:41.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Mentor\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAPMAAAAAAAAAAAAAAAYBAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T06:46:55.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Mentor\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Mentor\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:46:52.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Views\\Courses\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "Mentor\\Views\\Courses\\Index.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACcAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T06:43:07.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Areas\\Manage\\Views\\Course\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Views\\Course\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Areas\\Manage\\Views\\Course\\Edit.cshtml",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Views\\Course\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T06:40:54.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Areas\\Manage\\Views\\Course\\Create.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Views\\Course\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Areas\\Manage\\Views\\Course\\Create.cshtml",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Views\\Course\\Create.cshtml",
+              "ViewState": "AQIAACMAAAAAAAAAAAAQwEAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T06:39:56.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Mentor\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Models\\Course.cs",
+              "RelativeToolTip": "Mentor\\Models\\Course.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:30:53.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Areas\\Manage\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Areas\\Manage\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Controllers\\CourseController.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAQwIkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:39:53.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\Courses\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Views\\Courses\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Views\\Courses\\Detail.cshtml",
+              "RelativeToolTip": "Mentor\\Views\\Courses\\Detail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T06:29:35.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Mentor\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Mentor-ilafer\\Mentor\\Mentor\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Mentor\\Controllers\\CoursesController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:29:33.077Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\views\\pricing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\views\\pricing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\areas\\manage\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\areas\\manage\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\areas\\manage\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\areas\\manage\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\areas\\manage\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\areas\\manage\\views\\page\\forms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\views\\page\\forms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|c:\\users\\ilafar\\source\\repos\\mentor\\mentor\\areas\\manage\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C18103-D1C5-42AB-BC4D-668AACEADAC1}|Mentor\\Mentor.csproj|solutionrelative:mentor\\areas\\manage\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "Mentor\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "Mentor\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T07:39:08.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Mentor\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Models\\Course.cs",
+              "RelativeToolTip": "Mentor\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T07:33:56.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Mentor\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Models\\AppUser.cs",
+              "RelativeToolTip": "Mentor\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T07:33:41.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Views\\Pricing\\Index.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Views\\Pricing\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Views\\Pricing\\Index.cshtml",
+              "RelativeToolTip": "Mentor\\Views\\Pricing\\Index.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAQwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T05:35:36.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Forms.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Views\\Page\\Forms.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Views\\Page\\Forms.cshtml",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Views\\Page\\Forms.cshtml",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Views\\Page\\Forms.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T05:07:41.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T05:03:21.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Program.cs",
+              "RelativeDocumentMoniker": "Mentor\\Program.cs",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Program.cs",
+              "RelativeToolTip": "Mentor\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T04:57:43.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T04:56:15.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "Mentor\\Models\\Enrollment.cs",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Models\\Enrollment.cs",
+              "RelativeToolTip": "Mentor\\Models\\Enrollment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T04:54:40.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Models\\Trainer.cs",
+              "RelativeDocumentMoniker": "Mentor\\Models\\Trainer.cs",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Models\\Trainer.cs",
+              "RelativeToolTip": "Mentor\\Models\\Trainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T04:54:38.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PageController.cs",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Controllers\\PageController.cs",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Controllers\\PageController.cs",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Controllers\\PageController.cs",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Controllers\\PageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T05:08:15.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T05:12:49.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T04:56:03.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Mentor\\Areas\\Manage\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Ilafar\\source\\repos\\Mentor\\Mentor\\Areas\\Manage\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Mentor\\Areas\\Manage\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T04:53:50.411Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

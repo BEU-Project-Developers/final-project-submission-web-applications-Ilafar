@@ -1,0 +1,23 @@
+using System.Diagnostics;
+using Mentor.DAL;
+using Mentor.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Mentor.Controllers
+{
+    public class HomeController(MentorAppDbContext mentorAppDbContext) : Controller
+    {
+
+        public IActionResult Index()
+        {
+            HomeVm vm = new HomeVm()
+            {
+                Courses =mentorAppDbContext.Courses.Include(c=>c.Trainer).ToList(),
+                Trainers = mentorAppDbContext.Trainers.ToList()
+            };
+            ViewData["ActivePage"] = "Home";
+            return View(vm);
+        }
+    }
+}

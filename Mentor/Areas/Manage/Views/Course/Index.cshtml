@@ -1,0 +1,65 @@
+﻿@model List<Course>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Courses list :</h2>
+    <div>
+        <a class="btn btn-primary" asp-action="create" asp-controller="course">
+            Add new course
+        </a>
+    </div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>courseImage</th>
+            <th>Fullname</th>
+            <th>Crud</th>
+        </tr>
+
+        
+        @foreach (var course in Model)
+        {
+            <tr>
+                <td>@course.Id</td>
+                <td> <img src="~/assets/img/@course.Image" style="width:100px;height:100px" class="img-fluid" alt=""></td>
+                <td>@course.Title</td>
+                <td>
+                    <a class="btn btn-primary" asp-action="edit" asp-controller="course" asp-route-id="@course.Id">
+                        Edit
+                    </a>
+                    <a class="btn btn-primary" asp-action="detail" asp-controller="course" asp-route-id="@course.Id">
+                        Details
+                    </a>
+                    <a asp-action="delete" asp-controller="course" asp-route-id="@course.Id" class="btn btn-danger">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+
+
+    </table>
+
+</body>
+</html>
+

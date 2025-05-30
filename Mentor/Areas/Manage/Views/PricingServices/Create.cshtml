@@ -1,0 +1,24 @@
+﻿@using Mentor.ViewModels
+@model PricingServiceCreateVM
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form method="post">
+                <div class="form-group">
+                    <label asp-for="PricingId">Pricing Name :</label>
+                    <select asp-for="PricingId" class="form-select" asp-items="ViewBag.Pricings">
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="ServiceIds">Pricing Name :</label>
+                    <select asp-for="ServiceIds" class="form-select" multiple asp-items="ViewBag.Services">
+                    </select>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
+    </div>
+</div>

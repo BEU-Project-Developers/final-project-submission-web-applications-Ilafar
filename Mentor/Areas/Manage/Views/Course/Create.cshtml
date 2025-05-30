@@ -1,0 +1,65 @@
+﻿@model Course
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="Photo"></label>
+                    <input asp-for="Photo" class="form-control">
+                    <img style="width:150px;height=100px" id="PreviewImg" src="" alt="" />
+                    <span class="text-danger" asp-validation-for="Photo"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="Title"></label>
+                    <input asp-for="Title" class="form-control">
+                    <span class="text-danger" asp-validation-for="Title"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="Seats"></label>
+                    <input asp-for="Seats" class="form-control">
+                    <span class="text-danger" asp-validation-for="Seats"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="StartTime"></label>
+                    <input asp-for="StartTime" class="form-control">
+                    <span class="text-danger" asp-validation-for="StartTime"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="EndTime"></label>
+                    <input asp-for="EndTime" class="form-control">
+                    <span class="text-danger" asp-validation-for="EndTime"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="Category"></label>
+                    <input asp-for="Category" class="form-control">
+                    <span class="text-danger" asp-validation-for="Category"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="Price"></label>
+                    <input asp-for="Price" class="form-control">
+                    <span class="text-danger" asp-validation-for="Price"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="Description"></label>
+                    <input asp-for="Description" class="form-control">
+                    <span class="text-danger" asp-validation-for="Description"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="TrainerId">Trainer Name :</label>
+                    <select asp-for="TrainerId" class="form-select" aria-label="Default select example" asp-items="@ViewBag.Trainers">
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+﻿@model Pricing
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form method="post">
+
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control">
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="Price"></label>
+                    <input asp-for="Price" class="form-control">
+                    <span class="text-danger" asp-validation-for="Price"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div>
+                        <label asp-for="IsFeatured"></label>
+                        <input asp-for="IsFeatured">
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div>
+                        <label asp-for="IsAdvanced"></label>
+                        <input asp-for="IsAdvanced">
+                    </div>
+                </div>
+                <br />
+
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
+    </div>
+</div>

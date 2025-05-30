@@ -1,0 +1,65 @@
+﻿@model StartVm
+<section id="login-register" class="inner-page">
+    <div class="container" data-aos="fade-up">
+        <div class="row gy-4 justify-content-center">
+
+            <!-- New Customer Form -->
+            <div class="col-lg-10">
+                <div class="card p-4 shadow-sm">
+                    <h4 class="mb-3">New</h4>
+                    <p><strong>I am a new one</strong></p>
+                    <form method="post">
+                        <div class="form-group mb-3">
+                            <label asp-for="FirstName">First Name :</label>
+                            <input class="mb-0 form-control" asp-for="FirstName"
+                                   placeholder="Enter your first name">
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="LastName">Last Name :</label>
+                            <input class="mb-0 form-control" asp-for="LastName"
+                                   placeholder="Enter your last name">
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Age">Age :</label>
+                            <input class="mb-0 form-control" asp-for="Age"
+                                   placeholder="Enter your age">
+                            <span asp-validation-for="Age" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Username">User Name :</label>
+                            <input class="mb-0 form-control" asp-for="Username"
+                                   placeholder="Enter your user name">
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <label asp-for="Password">Password :</label>
+                                <input class="mb-0 form-control" asp-for="Password"
+                                       placeholder="Enter your password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <label asp-for="ConfirmPassword">Repeate Password :</label>
+                                <input class="mb-0 form-control" asp-for="ConfirmPassword"
+                                       placeholder="Confirm your password">
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success w-100">Register</button>
+                        </div>
+                        <p>
+                            if you have an account ,  <a asp-action="login" asp-controller="getstarted" type="submit" class="btn btn-success w-100">Sign in</a>
+                        </p>
+                    </form>
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                </div>
+            </div>
+            
+           
+
+        </div>
+    </div>
+</section>

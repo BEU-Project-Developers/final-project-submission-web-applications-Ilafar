@@ -1,0 +1,61 @@
+﻿@model List<Service>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Services list :</h2>
+    <div>
+        <a class="btn btn-primary" asp-action="create" asp-controller="service">
+            Add new service
+        </a>
+    </div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Crud</th>
+        </tr>
+        @foreach (var service in Model)
+        {
+            <tr>
+                <td>@service.Id</td>
+                <td>@service.Name</td>
+                <td>
+                    <a class="btn btn-primary" asp-action="edit" asp-controller="service" asp-route-id="@service.Id">
+                        Edit
+                    </a>
+                    <a class="btn btn-primary" asp-action="detail" asp-controller="service" asp-route-id="@service.Id">
+                        Details
+                    </a>
+                    <a asp-action="delete" asp-controller="service" asp-route-id="@service.Id" class="btn btn-danger">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+
+
+    </table>
+
+</body>
+</html>
+
