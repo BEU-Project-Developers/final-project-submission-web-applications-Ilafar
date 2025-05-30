@@ -1,0 +1,76 @@
+﻿  @model ProfileVm
+<div class="myaccount-content container py-4">
+    <h3 class="mb-4">Account Details</h3>
+    <div class="account-details-form">
+      
+
+        <form method="post">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="form-label">First Name</label>
+                        <input class="form-control" asp-for="FirstName" placeholder="Enter your first name" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="LastName" class="form-label">Last Name</label>
+                        <input class="form-control" asp-for="LastName" placeholder="Enter your last name" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Username" class="form-label">Username</label>
+                        <input class="form-control" asp-for="Username" placeholder="Enter your Username" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Age" class="form-label">Age</label>
+                        <input class="form-control" asp-for="Age" placeholder="Enter your age" />
+                        <span asp-validation-for="Age" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+          
+           
+
+            <fieldset class="border p-3 mb-4 rounded">
+                <legend class="w-auto px-2">Password Change</legend>
+                <div class="form-group mb-3">
+                    <label asp-for="Password" class="form-label">Previous Password</label>
+                    <input class="form-control" asp-for="Password" placeholder="Enter your old password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="NewPassword" class="form-label">New Password</label>
+                            <input class="form-control" asp-for="NewPassword" placeholder="Enter your new password" />
+                            <span asp-validation-for="NewPassword" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="ConfirmPassword" class="form-label">Repeat New Password</label>
+                            <input class="form-control" asp-for="ConfirmPassword" placeholder="Repeat new password" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+        </form>
+
+        <div class="text-danger mt-2" asp-validation-summary="ModelOnly"></div>
+    </div>
+</div>

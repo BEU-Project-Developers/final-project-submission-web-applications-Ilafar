@@ -96,5 +96,71 @@ namespace Mentor.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Profile()
+        {
+            var eUser = await userManager.GetUserAsync(User);
+            if (eUser == null) return NotFound();
+
+            var profileVm = new ProfileVm
+            {
+                Username = eUser.UserName,
+                FirstName = eUser.FirstName,
+                LastName = eUser.LastName,
+                Age = eUser.Age
+            };
+
+            return View(profileVm);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Profile(ProfileVm profileVm)
+        {
+            if (!ModelState.IsValid)
+                return View(profileVm);
+
+            var updateUser = await userManager.GetUserAsync(User);
+            if (updateUser == null) return NotFound();
+
+            updateUser.FirstName = profileVm.FirstName;
+            updateUser.LastName = profileVm.LastName;
+            updateUser.UserName = profileVm.Username;
+            updateUser.Age = profileVm.Age;
+
+            if (!string.IsNullOrWhiteSpace(profileVm.NewPassword))
+            {
+                if (string.IsNullOrWhiteSpace(profileVm.Password))
+                {
+                    ModelState.AddModelError("Password", "Write previous password");
+                    return View(profileVm);
+                }
+
+                if (profileVm.NewPassword.ToLower() == updateUser.UserName.ToLower())
+                {
+                    ModelState.AddModelError("", "Create a stronger password");
+                    return View(profileVm);
+                }
+
+                var passwordChangeResult = await userManager.ChangePasswordAsync(updateUser, profileVm.Password, profileVm.NewPassword);
+                if (!passwordChangeResult.Succeeded)
+                {
+                    foreach (var error in passwordChangeResult.Errors)
+                        ModelState.AddModelError("", error.Description);
+                    return View(profileVm);
+                }
+            }
+
+            var updateResult = await userManager.UpdateAsync(updateUser);
+            if (!updateResult.Succeeded)
+            {
+                foreach (var error in updateResult.Errors)
+                    ModelState.AddModelError("", error.Description);
+                return View(profileVm);
+            }
+
+            await signInManager.SignInAsync(updateUser, true);
+            return RedirectToAction(nameof(Profile));
+        }
+
     }
 }

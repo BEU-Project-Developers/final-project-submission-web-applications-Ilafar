@@ -70,7 +70,7 @@
 
             @if (User.Identity.IsAuthenticated)
             {
-                <a class="btn-getstarted" asp-action="user" asp-controller="getstarted">@User.Identity.Name</a>
+                <a class="btn-getstarted" asp-action="profile" asp-controller="getstarted">@User.Identity.Name</a>
             }
             else
             {
