@@ -68,8 +68,14 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" asp-controller="getstarted" asp-action="started">Get Started</a>
-
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a class="btn-getstarted" asp-action="user" asp-controller="getstarted">@User.Identity.Name</a>
+            }
+            else
+            {
+                <a class="btn-getstarted" asp-controller="getstarted" asp-action="started">Get Started</a>
+            }
     </div>
   </header>
 

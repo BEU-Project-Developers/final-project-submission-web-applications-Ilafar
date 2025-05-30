@@ -77,17 +77,24 @@ namespace Mentor.Controllers
 
             if (resultPassword.IsLockedOut)
             {
-                ModelState.AddModelError("", "try some time later");
+                ModelState.AddModelError(string.Empty, "try some time later");
                 return View();
             }
 
             if (!resultPassword.Succeeded)
             {
-                ModelState.AddModelError("", "invalid username or password");
+                ModelState.AddModelError(string.Empty, "invalid username or password");
                 return View();
             }
 
             return RedirectToAction("index","home");
         }
+
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }

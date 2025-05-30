@@ -1,13 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Mentor.DAL;
+using Mentor.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Mentor.Controllers
 {
-    public class AboutController : Controller
+    public class AboutController(MentorAppDbContext  mentorAppDbContext) : Controller
     {
         public IActionResult Index()
         {
-            ViewData["ActivePage"] = "About";
-            return View();
+            HomeVm vm = new HomeVm()
+            {
+                Courses = mentorAppDbContext.Courses.Include(c => c.Trainer).ToList(),
+                Trainers = mentorAppDbContext.Trainers.ToList(),
+                Users = mentorAppDbContext.AppUsers.ToList()
+            };
+            ViewData["ActivePage"] = "Home";
+            return View(vm);
         }
     }
 }
