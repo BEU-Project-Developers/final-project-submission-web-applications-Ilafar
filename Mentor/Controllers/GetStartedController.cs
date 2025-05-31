@@ -66,7 +66,7 @@ namespace Mentor.Controllers
             var eUser = await userManager.FindByNameAsync(loginVm.Username);
             if (eUser is null)
             {
-                ModelState.AddModelError("", "invalid username or passworddd");
+                ModelState.AddModelError("", "invalid username or password");
                 return View();
             }
             var resultPassword = await signInManager.PasswordSignInAsync(
@@ -135,12 +135,6 @@ namespace Mentor.Controllers
                 if (string.IsNullOrWhiteSpace(profileVm.Password))
                 {
                     ModelState.AddModelError("Password", "Write previous password");
-                    return View(profileVm);
-                }
-
-                if (profileVm.NewPassword.ToLower() == updateUser.UserName.ToLower())
-                {
-                    ModelState.AddModelError("", "Create a stronger password");
                     return View(profileVm);
                 }
 

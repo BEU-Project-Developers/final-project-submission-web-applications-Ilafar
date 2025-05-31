@@ -8,6 +8,7 @@ namespace Mentor.ViewModels
         public List<Trainer> Trainers { get; set; }
         public List<AppUser> Users { get; set; }
         public List<MentorTags> MentorTags { get; set; }
+        public List<WhyUs> WhyUses { get; set; }
         public int Count { get; set; }
     }
 }

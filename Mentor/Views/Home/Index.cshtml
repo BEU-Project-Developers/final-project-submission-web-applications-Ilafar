@@ -25,17 +25,11 @@
           </div>
 
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Voluptatem dignissimos provident quasi corporis</h3>
+                <h3>Mentor – Free Education Bootstrap</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul>
-            <a asp-controller="courses" asp-action="Index" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    Mentor is a modern, clean, and professional Bootstrap-based website template designed specifically for educational institutions, online course platforms, training centers, and learning management systems. Built with HTML5, CSS3, and Bootstrap, Mentor offers a fully responsive layout that adapts seamlessly to all devices and screen sizes. It features a stylish homepage, course listings, teacher profiles, testimonials, and contact forms. The template is easy to customize, SEO-friendly, and perfect for building a strong online presence for schools, academies, or individual instructors.
+                </p>
+           
           </div>
 
         </div>
@@ -89,41 +83,30 @@
             <div class="why-box">
               <h3>Why Choose Our Products?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
-              </div>
+                        Here are some compelling reasons why you might choose Mentor
+                        Here are some compelling reasons why you might choose Mentor
+                        Here are some compelling reasons why you might choose Mentor
+                        Here are some compelling reasons why you might choose Mentor
+                        Here are some compelling reasons why you might choose Mentor
+                        Here are some compelling reasons why you might choose Mentor
+                    </p>
+             
             </div>
           </div>
 
           <div class="col-lg-8 d-flex align-items-stretch">
             <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
-              <div class="col-xl-4">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-              </div>
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-              </div>
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-              </div>
+        @foreach (var wUs in Model.WhyUses)
+                    {
+                        <div class="col-xl-4">
+                            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                               @Html.Raw(wUs.Icon)
+                                <h4>@wUs.Name</h4>
+                                <p>@wUs.Description</p>
+                            </div>
+                        </div>
+                    }
 
             </div>
           </div>

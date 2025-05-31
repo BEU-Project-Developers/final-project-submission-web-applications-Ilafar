@@ -30,7 +30,8 @@ namespace Mentor.Controllers
                 Trainers = mentorAppDbContext.Trainers.ToList(),
                 Users = mentorAppDbContext.AppUsers.ToList(),
                 MentorTags = mentorAppDbContext.MentorTags.ToList(),
-                Count = await MemberCount()
+                Count = await MemberCount(),
+                WhyUses = mentorAppDbContext.WhyUs.ToList()
                 
             };
             ViewData["ActivePage"] = "Home";
