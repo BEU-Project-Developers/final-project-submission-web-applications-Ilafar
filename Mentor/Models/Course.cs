@@ -25,5 +25,8 @@ namespace Mentor.Models
         public Trainer Trainer { get; set; }
         [NotMapped]
         public IFormFile Photo { get; set; }
+        public List<CourseComment> CourseComments { get; set; }
+
+
     }
 }

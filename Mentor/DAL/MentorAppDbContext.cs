@@ -14,6 +14,7 @@ namespace Mentor.DAL
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<MentorTags> MentorTags { get; set; }
         public DbSet<WhyUs> WhyUs { get; set; }
+        public DbSet<CourseComment> CourseComments { get; set; }
         public MentorAppDbContext(DbContextOptions options) : base(options)
         {
 
