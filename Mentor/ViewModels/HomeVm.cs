@@ -10,5 +10,6 @@ namespace Mentor.ViewModels
         public List<MentorTags> MentorTags { get; set; }
         public List<WhyUs> WhyUses { get; set; }
         public int Count { get; set; }
+        public List<CourseComment> CourseComments { get; set; }
     }
 }

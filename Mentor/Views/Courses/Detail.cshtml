@@ -6,8 +6,7 @@
         <div class="container">
             <div class="row d-flex justify-content-center text-center">
                 <div class="col-lg-8">
-                    <h1>Course Details</h1>
-                    <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+                    <h1>@Model.Course.Title</h1>
                 </div>
             </div>
         </div>
@@ -29,10 +28,23 @@
         <div class="row">
             <div class="col-lg-8">
                 <img src="~/assets/img/@Model.Course.Image" class="img-fluid" alt="">
-                <h3>Et enim incidunt fuga tempora</h3>
+                <h3>Description</h3>
                 <p>
                     @Model.Course.Description
                 </p>
+                <div class="col-12 text-end p-3">
+                    @if (Model.IsCourseBought)
+                    {
+                         <a href="@Model.Course.YoutubeLink" target="_blank" class="btn btn-primary me-2">📺 Watch Video</a>
+                         <a href="@Url.Content($"~/assets/docs/{Model.Course.Title}.zip")" download class="btn btn-success me-2">📄 Download Documents</a>
+                    }
+                    else
+                    {
+                       <form method="post" asp-action="BuyCourse" asp-route-id="@Model.Course.Id">
+                                 <button type="submit" class="btn btn-warning px-4 py-2">🛒 Buy Course</button>
+                        </form>
+                    }
+</div>
             </div>
             <div class="col-lg-4">
 
@@ -132,20 +144,7 @@
             </form>
 
         </div>
-        @*  @if (Model.CourseComments?.Any() == true)
-        {
-        <div class="mt-5">
-        <h5>Comments</h5>
-        @foreach (var comment in Model.CourseComments)
-        {
-        <div class="p-3 border mb-2 rounded">
-        <strong>@comment.AppUser.UserName</strong>
-        <p>@comment.Text</p>
-        </div>
-        }
-        </div>
-        }
-        *@
+       
     </div>
 
 </section><!-- /Tabs Section -->

@@ -6,5 +6,6 @@ namespace Mentor.ViewModels
     {
         public List<Pricing> Pricings { get; set; }
         public List<Service> Services { get; set; }
+        public int? SelectedPricingId { get; set; }
     }
 }

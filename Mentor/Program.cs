@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<MentorAppDbContext>(opt =>
 {
-    opt.UseSqlServer("Server=DESKTOP-Q4CUAVA\\SQLEXPRESS;Database=MentorIlafer;Trusted_Connection=True;TrustServerCertificate=True;");
+    opt.UseSqlServer("Data Source=BIZIMACER\\SQLEXPRESS;Initial Catalog=MentorDbIlafer;Integrated Security=True;Trust Server Certificate=True");
 });
 builder.Services.AddIdentity<AppUser, IdentityRole>(option =>
 {

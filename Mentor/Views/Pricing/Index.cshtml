@@ -7,7 +7,7 @@
             <div class="row d-flex justify-content-center text-center">
                 <div class="col-lg-8">
                     <h1>Pricing</h1>
-                    <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+                    <p class="mb-0">Flexible plans for every learner. Whether you're exploring a new skill or mastering your career, Mentor offers affordable pricing options that fit your goals. Choose from one-time course payments or full access subscriptions — no hidden fees, no long-term commitments.</p>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
             @foreach (var pricing in Model.Pricings)
             {
                 <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pricing-item @(pricing.IsFeatured?"featured":"")">
+                        <div class="pricing-item @(pricing.Id == Model.SelectedPricingId ? "featured" : "")">
                         @if (pricing.IsAdvanced)
                         {
                             <span class="advanced">Advanced</span>
@@ -43,20 +43,18 @@
                             {
                                 if (pricing.PricingServices.Any(ps => ps.ServiceId == ser.Id))
                                 {
-                                    <li>@ser.Name</li>
+                                    <li style="text-align: left;">✅ @ser.Name</li>
                                 }
                                 else
                                 {
-                                    <li class="na">@ser.Name</li>
+                                    <li class="na" style="text-align: left;">❌ @ser.Name</li>
                                 }
-
-                                //2ci usul :
-                                // <li class= "@pricing.PricingServices.Any(ps=>ps.ServiceId==ser.Id)?"":"na">@ser.Name</li>
                             }
                         </ul>
-                        <div class="btn-wrap">
-                            <a href="#" class="btn-buy">Buy Now</a>
-                        </div>
+                            <form method="post" asp-action="SelectPricing">
+                                <input type="hidden" name="pricingId" value="@pricing.Id" />
+                                <button type="submit" class="btn-buy">Buy Now</button>
+                            </form>
                     </div>
                 </div>
 

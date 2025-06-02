@@ -138,6 +138,7 @@ namespace Mentor.Areas.Manage.Controllers
             existingcourse.Seats = course.Seats;
             existingcourse.StartTime = course.StartTime;
             existingcourse.EndTime = course.EndTime;
+            existingcourse.YoutubeLink = course.YoutubeLink;
 
 
             mentorAppDbContext.SaveChanges();
@@ -159,7 +160,11 @@ namespace Mentor.Areas.Manage.Controllers
             {
                 System.IO.File.Delete(imagePath);
             }
+            var userCourses = mentorAppDbContext.UserCourses
+                .Where(uc => uc.CourseId == course.Id)
+                .ToList();
 
+            mentorAppDbContext.UserCourses.RemoveRange(userCourses);
             mentorAppDbContext.Courses.Remove(course);
             mentorAppDbContext.SaveChanges();
 

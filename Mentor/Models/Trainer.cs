@@ -16,5 +16,10 @@ namespace Mentor.Models
         public List<Course> Courses { get; set; }
         [NotMapped]
         public IFormFile Photo { get; set; }
+        public string TwitterUrl { get; set; }
+        public string FacebookUrl { get; set; }
+        public string InstagramUrl { get; set; }
+        public string LinkedinUrl { get; set; }
+
     }
 }

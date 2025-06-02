@@ -5,9 +5,15 @@ wwwroot\assets\img\apple-touch-icon.png
 wwwroot\assets\img\course-1.jpg
 wwwroot\assets\img\course-2.jpg
 wwwroot\assets\img\course-3.jpg
+wwwroot\assets\img\course-4.jpg
+wwwroot\assets\img\course-5.jpg
+wwwroot\assets\img\course-6.jpg
+wwwroot\assets\img\course-7.jpg
+wwwroot\assets\img\course-8.jpg
 wwwroot\assets\img\course-details.jpg
 wwwroot\assets\img\events-item-1.jpg
 wwwroot\assets\img\events-item-2.jpg
+wwwroot\assets\img\f0e1c6f4-b8d6-4b3d-b788-aa878ed11dfb.jpg
 wwwroot\assets\img\favicon.png
 wwwroot\assets\img\hero-bg.jpg
 wwwroot\assets\img\logo.png
@@ -16,6 +22,9 @@ wwwroot\assets\img\tabs\tab-2.png
 wwwroot\assets\img\tabs\tab-3.png
 wwwroot\assets\img\tabs\tab-4.png
 wwwroot\assets\img\tabs\tab-5.png
+wwwroot\assets\img\team\43dbe88b-3549-437f-acae-378bbd270d31.jpg
+wwwroot\assets\img\team\53767ce8-3dcd-4d4d-a61f-565cc1530681.jpg
+wwwroot\assets\img\team\9d26ccd8-845f-44b6-8521-ce8d49bf075f.jpg
 wwwroot\assets\img\team\team-1.jpg
 wwwroot\assets\img\team\team-2.jpg
 wwwroot\assets\img\team\team-3.jpg

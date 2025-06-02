@@ -32,8 +32,18 @@ namespace Mentor.Controllers
             {
                 Course = eCourse,
                 TotalComments = mentorAppDbContext.CourseComments.Count(bc => bc.CourseId == id),
+
             };
-          
+
+            if (User.Identity.IsAuthenticated)
+            {
+                var userId = userManager.GetUserId(User);
+                var hasCourse = mentorAppDbContext.UserCourses
+                    .Any(uc => uc.UserId == userId && uc.CourseId == id && uc.IsActive);
+
+                courseDetailVm.IsCourseBought = hasCourse;
+            }
+
 
             return View(courseDetailVm);
         }
@@ -82,6 +92,34 @@ namespace Mentor.Controllers
             return RedirectToAction("Detail", "Courses", new { id = dComment.CourseId });
         }
 
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> BuyCourse(int id)
+        {
+            var userId = userManager.GetUserId(User);
 
+            var existing = await mentorAppDbContext.UserCourses
+                .FirstOrDefaultAsync(uc => uc.UserId == userId && uc.CourseId == id);
+
+            var course = mentorAppDbContext.Courses.FirstOrDefault(c => c.Id== id);
+            
+
+
+            if (existing == null)
+            {
+                var userCourse = new UserCourse
+                {
+                    UserId = userId,
+                    CourseId = id,
+                    IsActive = true
+                };
+                course.BuyCount = course.BuyCount + 1;
+
+                mentorAppDbContext.UserCourses.Add(userCourse);
+                await mentorAppDbContext.SaveChangesAsync();
+            }
+
+            return RedirectToAction("Detail", "Courses", new { id });
+        }
     }
 }

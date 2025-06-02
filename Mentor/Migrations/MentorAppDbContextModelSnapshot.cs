@@ -134,6 +134,9 @@ namespace Mentor.Migrations
                     b.Property<int>("TrainerId")
                         .HasColumnType("int");
 
+                    b.Property<string>("YoutubeLink")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("TrainerId");
@@ -259,16 +262,80 @@ namespace Mentor.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FacebookUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FullName")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("InstagramUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LinkedinUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TrainerImage")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("TwitterUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Trainers");
+                });
+
+            modelBuilder.Entity("Mentor.Models.UserCourse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserCourses");
+                });
+
+            modelBuilder.Entity("Mentor.Models.UserPricing", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsFeatured")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("PricingId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserPricing");
                 });
 
             modelBuilder.Entity("Mentor.Models.WhyUs", b =>
@@ -447,7 +514,7 @@ namespace Mentor.Migrations
                         .HasForeignKey("AppUserId");
 
                     b.HasOne("Mentor.Models.Course", "Course")
-                        .WithMany()
+                        .WithMany("CourseComments")
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -474,6 +541,23 @@ namespace Mentor.Migrations
                     b.Navigation("Pricing");
 
                     b.Navigation("Service");
+                });
+
+            modelBuilder.Entity("Mentor.Models.UserCourse", b =>
+                {
+                    b.HasOne("Mentor.Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Mentor.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Course");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -525,6 +609,11 @@ namespace Mentor.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Mentor.Models.Course", b =>
+                {
+                    b.Navigation("CourseComments");
                 });
 
             modelBuilder.Entity("Mentor.Models.Pricing", b =>
