@@ -15,65 +15,82 @@ namespace Mentor.Controllers
     {
         public IActionResult Index()
         {
-            var pricing = mentorAppDbContext.Pricings.Include(p => p.PricingServices).ThenInclude(ps => ps.Service).ToList();
-            var service = mentorAppDbContext.Services.ToList();
-
-            int? selectedPricingId = null;
-
-            if (User.Identity.IsAuthenticated)
+            try
             {
-                var userId = userManager.GetUserId(User);
-                selectedPricingId = mentorAppDbContext.UserPricing
-                    .FirstOrDefault(up => up.UserId == userId)?.PricingId;
+                var pricing = mentorAppDbContext.Pricings
+                    .Include(p => p.PricingServices)
+                    .ThenInclude(ps => ps.Service)
+                    .ToList();
+
+                var service = mentorAppDbContext.Services.ToList();
+
+                int? selectedPricingId = null;
+
+                if (User.Identity.IsAuthenticated)
+                {
+                    var userId = userManager.GetUserId(User);
+                    selectedPricingId = mentorAppDbContext.UserPricing
+                        .FirstOrDefault(up => up.UserId == userId)?.PricingId;
+                }
+
+                PricingVm pricingVm = new PricingVm()
+                {
+                    Pricings = pricing,
+                    Services = service,
+                    SelectedPricingId = selectedPricingId
+                };
+
+                ViewData["ActivePage"] = "Pricing";
+                return View(pricingVm);
             }
-
-            PricingVm pricingVm = new PricingVm()
+            catch
             {
-                Pricings = pricing,
-                Services = service,
-                SelectedPricingId = selectedPricingId
-            };
-            ViewData["ActivePage"] = "Pricing";
-            return View(pricingVm);
+                return Problem();
+            }
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SelectPricing(int pricingId)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
+            try
             {
-                return RedirectToAction("Login", "GetStarted",
-                    new { returnUrl = Url.Action("Index", "Pricing") });
-            }
-
-            var userPricing = await mentorAppDbContext.UserPricing
-                                                      .FirstOrDefaultAsync(up => up.UserId == userId);
-
-            if (userPricing != null)
-            {
-                userPricing.PricingId = pricingId;
-                userPricing.IsFeatured = true;
-                Debug.WriteLine("Existing UserPricing found. Updated PricingId to: " + pricingId);
-            }
-            else
-            {
-                var newUserPricing = new UserPricing
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (userId == null)
                 {
-                    UserId = userId,
-                    PricingId = pricingId,   
-                    IsFeatured = true
-                };
+                    return RedirectToAction("Login", "GetStarted",
+                        new { returnUrl = Url.Action("Index", "Pricing") });
+                }
 
-                await mentorAppDbContext.UserPricing.AddAsync(newUserPricing);
-                Debug.WriteLine("New UserPricing created with PricingId = 1");
+                var userPricing = await mentorAppDbContext.UserPricing
+                    .FirstOrDefaultAsync(up => up.UserId == userId);
+
+                if (userPricing != null)
+                {
+                    userPricing.PricingId = pricingId;
+                    userPricing.IsFeatured = true;
+                    Debug.WriteLine("Existing UserPricing found. Updated PricingId to: " + pricingId);
+                }
+                else
+                {
+                    var newUserPricing = new UserPricing
+                    {
+                        UserId = userId,
+                        PricingId = pricingId,
+                        IsFeatured = true
+                    };
+
+                    await mentorAppDbContext.UserPricing.AddAsync(newUserPricing);
+                    Debug.WriteLine("New UserPricing created with PricingId = " + pricingId);
+                }
+
+                await mentorAppDbContext.SaveChangesAsync();
+                return RedirectToAction("Index");
             }
-
-            await mentorAppDbContext.SaveChangesAsync();
-
-            return RedirectToAction("Index");
+            catch
+            {
+                return Problem();
+            }
         }
     }
-
 }

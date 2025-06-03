@@ -19,145 +19,178 @@ namespace Mentor.Controllers
         public async Task<IActionResult> Started(StartVm model)
         {
             if (!ModelState.IsValid)
-            {
                 return View(model);
-            }
 
-            var existingUser = await userManager.FindByNameAsync(model.Username);
-            if (existingUser != null)
+            try
             {
-                ModelState.AddModelError(nameof(model.Username), "This username is already taken");
-                return View(model);
-            }
-
-            var newUser = new AppUser
-            {
-                FirstName = model.FirstName,
-                LastName = model.LastName,
-                UserName = model.Username,
-                Age = model.Age,
-            };
-
-            var creationResult = await userManager.CreateAsync(newUser, model.Password);
-
-            if (!creationResult.Succeeded)
-            {
-                foreach (var error in creationResult.Errors)
+                var existingUser = await userManager.FindByNameAsync(model.Username);
+                if (existingUser != null)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    ModelState.AddModelError(nameof(model.Username), "This username is already taken");
+                    return View(model);
                 }
-                return View();
+
+                var newUser = new AppUser
+                {
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    UserName = model.Username,
+                    Age = model.Age,
+                };
+
+                var creationResult = await userManager.CreateAsync(newUser, model.Password);
+                if (!creationResult.Succeeded)
+                {
+                    foreach (var error in creationResult.Errors)
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    return View();
+                }
+
+                await userManager.AddToRoleAsync(newUser, "Member");
+                return RedirectToAction("Login", "GetStarted");
             }
-
-             await userManager.AddToRoleAsync(newUser, "Member");
-
-            return RedirectToAction("Login", "Getstarted");
+            catch
+            {
+                return Problem();
+            }
         }
 
         public IActionResult Login()
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Login(LoginVm loginVm)
         {
             if (!ModelState.IsValid)
                 return View();
-            var eUser = await userManager.FindByNameAsync(loginVm.Username);
-            if (eUser is null)
-            {
-                ModelState.AddModelError("", "invalid username or password");
-                return View();
-            }
-            var resultPassword = await signInManager.PasswordSignInAsync(
-    eUser.UserName,  
-    loginVm.Password,
-    isPersistent: false,   
-    lockoutOnFailure: true
-);
 
-            if (resultPassword.IsLockedOut)
+            try
             {
-                ModelState.AddModelError(string.Empty, "try some time later");
-                return View();
-            }
+                var eUser = await userManager.FindByNameAsync(loginVm.Username);
+                if (eUser is null)
+                {
+                    ModelState.AddModelError("", "invalid username or password");
+                    return View();
+                }
 
-            if (!resultPassword.Succeeded)
+                var resultPassword = await signInManager.PasswordSignInAsync(
+                    eUser.UserName,
+                    loginVm.Password,
+                    false,
+                    true
+                );
+
+                if (resultPassword.IsLockedOut)
+                {
+                    ModelState.AddModelError(string.Empty, "try some time later");
+                    return View();
+                }
+
+                if (!resultPassword.Succeeded)
+                {
+                    ModelState.AddModelError(string.Empty, "invalid username or password");
+                    return View();
+                }
+
+                return RedirectToAction("Index", "Home");
+            }
+            catch
             {
-                ModelState.AddModelError(string.Empty, "invalid username or password");
-                return View();
+                return Problem();
             }
-
-            return RedirectToAction("index","home");
         }
 
         public async Task<IActionResult> Logout()
         {
-            await signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            try
+            {
+                await signInManager.SignOutAsync();
+                return RedirectToAction("Index", "Home");
+            }
+            catch
+            {
+                return Problem();
+            }
         }
 
         [HttpGet]
         [Authorize(Roles = "Member")]
         public async Task<IActionResult> Profile()
         {
-            var eUser = await userManager.GetUserAsync(User);
-            if (eUser == null) return NotFound();
-
-            var profileVm = new ProfileVm
+            try
             {
-                Username = eUser.UserName,
-                FirstName = eUser.FirstName,
-                LastName = eUser.LastName,
-                Age = eUser.Age
-            };
+                var eUser = await userManager.GetUserAsync(User);
+                if (eUser == null)
+                    return NotFound();
 
-            return View(profileVm);
+                var profileVm = new ProfileVm
+                {
+                    Username = eUser.UserName,
+                    FirstName = eUser.FirstName,
+                    LastName = eUser.LastName,
+                    Age = eUser.Age
+                };
+
+                return View(profileVm);
+            }
+            catch
+            {
+                return Problem();
+            }
         }
-        [Authorize(Roles = "Member")]
 
         [HttpPost]
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> Profile(ProfileVm profileVm)
         {
             if (!ModelState.IsValid)
                 return View(profileVm);
 
-            var updateUser = await userManager.GetUserAsync(User);
-            if (updateUser == null) return NotFound();
-
-            updateUser.FirstName = profileVm.FirstName;
-            updateUser.LastName = profileVm.LastName;
-            updateUser.UserName = profileVm.Username;
-            updateUser.Age = profileVm.Age;
-
-            if (!string.IsNullOrWhiteSpace(profileVm.NewPassword))
+            try
             {
-                if (string.IsNullOrWhiteSpace(profileVm.Password))
+                var updateUser = await userManager.GetUserAsync(User);
+                if (updateUser == null)
+                    return NotFound();
+
+                updateUser.FirstName = profileVm.FirstName;
+                updateUser.LastName = profileVm.LastName;
+                updateUser.UserName = profileVm.Username;
+                updateUser.Age = profileVm.Age;
+
+                if (!string.IsNullOrWhiteSpace(profileVm.NewPassword))
                 {
-                    ModelState.AddModelError("Password", "Write previous password");
-                    return View(profileVm);
+                    if (string.IsNullOrWhiteSpace(profileVm.Password))
+                    {
+                        ModelState.AddModelError("Password", "Write previous password");
+                        return View(profileVm);
+                    }
+
+                    var passwordChangeResult = await userManager.ChangePasswordAsync(updateUser, profileVm.Password, profileVm.NewPassword);
+                    if (!passwordChangeResult.Succeeded)
+                    {
+                        foreach (var error in passwordChangeResult.Errors)
+                            ModelState.AddModelError("", error.Description);
+                        return View(profileVm);
+                    }
                 }
 
-                var passwordChangeResult = await userManager.ChangePasswordAsync(updateUser, profileVm.Password, profileVm.NewPassword);
-                if (!passwordChangeResult.Succeeded)
+                var updateResult = await userManager.UpdateAsync(updateUser);
+                if (!updateResult.Succeeded)
                 {
-                    foreach (var error in passwordChangeResult.Errors)
+                    foreach (var error in updateResult.Errors)
                         ModelState.AddModelError("", error.Description);
                     return View(profileVm);
                 }
-            }
 
-            var updateResult = await userManager.UpdateAsync(updateUser);
-            if (!updateResult.Succeeded)
+                await signInManager.SignInAsync(updateUser, true);
+                return RedirectToAction(nameof(Profile));
+            }
+            catch
             {
-                foreach (var error in updateResult.Errors)
-                    ModelState.AddModelError("", error.Description);
-                return View(profileVm);
+                return Problem();
             }
-
-            await signInManager.SignInAsync(updateUser, true);
-            return RedirectToAction(nameof(Profile));
         }
-
     }
 }

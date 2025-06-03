@@ -95,7 +95,6 @@ namespace Mentor.Areas.Manage.Controllers
                 return View(vm);
             }
 
-            // Əvvəl bütün köhnə əlaqələri sil
             var oldPricingServices = mentorAppDbContext.PricingServices
                 .Where(ps => ps.PricingId == vm.PricingId)
                 .ToList();
@@ -103,7 +102,6 @@ namespace Mentor.Areas.Manage.Controllers
             mentorAppDbContext.PricingServices.RemoveRange(oldPricingServices);
             mentorAppDbContext.SaveChanges();
 
-            // Sonra yenilərini əlavə et
             foreach (var serviceId in vm.ServiceIds)
             {
                 mentorAppDbContext.PricingServices.Add(new PricingService
@@ -140,7 +138,6 @@ namespace Mentor.Areas.Manage.Controllers
                 return NotFound();
             }
 
-            // Əlavə olaraq Pricing və Service-lərlə birlikdə datanı gətir
             var pricing = mentorAppDbContext.Pricings.FirstOrDefault(p => p.Id == id);
             if (pricing == null)
                 return NotFound();
