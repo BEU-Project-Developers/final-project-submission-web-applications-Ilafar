@@ -46,8 +46,17 @@ Mentor is a modern web-based learning platform inspired by Udemy, designed to of
 5. Change connection string in program.cs
 
 ## 📸 Screenshots
-
+Home page:
 ![Homepage Screenshot](Mentor/wwwroot/assets/img/screenshots/Screenshot%202025-06-03%20182806.png)
+
+Courses:
+![Courses Screenshot](Mentor/wwwroot/assets/img/screenshots/Screenshot%202025-06-03%20183942.png)
+
+Trainers:
+![Trainers Screenshot](Mentor/wwwroot/assets/img/screenshots/Screenshot%202025-06-03%20184008.png)
+
+Course:
+![Course Screenshot](Mentor/wwwroot/assets/img/screenshots/Screenshot%202025-06-03%20184113.png)
 
 ## 📧 Contact
 
