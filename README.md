@@ -47,8 +47,7 @@ Mentor is a modern web-based learning platform inspired by Udemy, designed to of
 
 ## 📸 Screenshots
 
-
-
+![Homepage Screenshot](./Mentor\wwwroot\assets\img\screenshots\Screenshot 2025-06-03 182806.png)
 
 ## 📧 Contact
 
